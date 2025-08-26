@@ -1,3 +1,4 @@
+import { Ionicons } from '@expo/vector-icons';
 import { router } from 'expo-router';
 import React, { useEffect, useState } from 'react';
 import { ActivityIndicator, Alert, FlatList, Text, TextInput, TouchableOpacity, View } from 'react-native';
@@ -92,7 +93,7 @@ export default function ListProdutos() {
         style={styles.deleteButton}
         onPress={() => handleDelete(item.id, item.name)}
       >
-        <Text style={styles.deleteButtonText}>🗑️</Text>
+        <Ionicons name="trash" size={24} color="red" />
       </TouchableOpacity>
     </View>
   );
@@ -199,11 +200,11 @@ const styles = createStyles({
   },
   
   addButton: {
-    backgroundColor: colors.primary,
+    backgroundColor: colors.secondary,
     paddingHorizontal: 15,
     paddingVertical: 8,
     borderRadius: 20,
-    shadowColor: colors.primary,
+    shadowColor: colors.secondary,
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.2,
     shadowRadius: 4,

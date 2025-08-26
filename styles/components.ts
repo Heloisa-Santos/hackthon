@@ -7,7 +7,8 @@ export const globalStyles = StyleSheet.create({
   // Container padrão
   container: {
     flex: 1,
-    backgroundColor: colors.background,
+    backgroundColor: colors.backgroundLight,
+    marginBottom: spacing.lg,
   },
   
   // Header padrão
@@ -60,6 +61,7 @@ export const globalStyles = StyleSheet.create({
   // Botões
   button: {
     backgroundColor: colors.primary,
+    justifyContent: 'space-between',
     padding: spacing.lg + 2, // 18px
     borderRadius: borderRadius.base,
     alignItems: 'center',
@@ -92,7 +94,23 @@ export const globalStyles = StyleSheet.create({
     fontFamily: typography.fontFamily.semibold,
     color: colors.primary, 
   },
-  
+  navButton: {
+    backgroundColor: colors.primary,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    width: '100%',
+    maxWidth: 400,
+    paddingVertical: 20,
+    paddingHorizontal: 20,
+    borderRadius: 12,
+    marginBottom: 20,
+    shadowColor: colors.primary,
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.3,
+    shadowRadius: 8,
+    elevation: 4,
+  },
   // Cards
   card: {
     backgroundColor: colors.backgroundLight,
@@ -168,6 +186,8 @@ export const globalStyles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
+    borderRightColor: colors.secondary,
+    borderRightWidth: 8,
     shadowColor: colors.graphite,
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.1,
