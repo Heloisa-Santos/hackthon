@@ -1,12 +1,16 @@
 import { Link } from 'expo-router';
-import { Text, View } from 'react-native';
+import { Image, Text, View } from 'react-native';
 import { colors, createStyles, globalStyles } from '../styles';
 
 export default function HomeScreen() {
   return (
     <View style={globalStyles.container}>
       <View style={[globalStyles.header, styles.homeHeader]}>
-        <Text style={globalStyles.title}>App de Empréstimos</Text>
+      <Image 
+          source={require('../assets/images/icon.png')}
+          style={styles.logoImage}
+          resizeMode="contain"
+        />
         <Text style={globalStyles.subtitle}>Caixa Econômica Federal</Text>
       </View>
       
@@ -62,4 +66,10 @@ const styles = createStyles({
     textAlign: 'center',
     lineHeight: 20,
   },
+  logoImage:{
+    width: 100,
+    height: 100,
+    padding:10,
+    marginBottom: 10,
+  }
 });

@@ -10,7 +10,7 @@ import { colors } from '../styles';
 import { useColorScheme } from '@/hooks/useColorScheme';
 import { caixaPalette } from '@/styles/colors';
 
-// Prevent the splash screen from auto-hiding
+
 SplashScreen.preventAutoHideAsync();
 
 // Componente para o logo no header
@@ -23,6 +23,8 @@ function HeaderLogo() {
           width: 40,
           height: 40,
           marginRight: 8,
+          padding: 4,
+          backgroundColor: colors.backgroundDark,
           borderRadius: 16,
          
         }}
@@ -51,7 +53,7 @@ export default function RootLayout() {
     'CAIXAStd-BoldItalic': require('../assets/fonts/CAIXAStd-BoldItalic.ttf'),
     'CAIXAStd-ExtraBoldItalic': require('../assets/fonts/CAIXAStd-ExtraBoldItalic.ttf'),
     
-    // Mantém a SpaceMono para fallback
+    
     SpaceMono: require('../assets/fonts/SpaceMono-Regular.ttf'),
   });
 
@@ -68,7 +70,7 @@ export default function RootLayout() {
   // Configuração padrão do header da Caixa
   const defaultHeaderOptions = {
     headerStyle: {
-      backgroundColor: caixaPalette.cinza_lighter_1,
+      backgroundColor: caixaPalette.azul_cx_darker_1,
       elevation: 4,
       shadowOpacity: 0.25,
       shadowRadius: 4,

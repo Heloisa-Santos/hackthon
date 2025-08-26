@@ -73,7 +73,7 @@ export const typography = {
     },
     body: {
       fontSize: 16,
-      fontFamily: 'CAIXAStd-Regular',
+      fontFamily: 'CAIXAStd-SemiBold',
       lineHeight: 24,
     },
     bodyMedium: {
