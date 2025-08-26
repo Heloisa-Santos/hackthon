@@ -1,50 +1,79 @@
-# Welcome to your Expo app 👋
+# EmprestimoApp 💰
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Sistema de gestão de produtos de empréstimo desenvolvido com React Native e Expo.
 
-## Get started
+## 🚀 Como rodar o projeto
 
-1. Install dependencies
-
-   ```bash
-   npm install
-   ```
-
-2. Start the app
-
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+### 1. Instalar dependências
 
 ```bash
-npm run reset-project
+npm install
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### 2. Iniciar o projeto
 
-## Learn more
+```bash
+npx expo start
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+### 3. Executar no dispositivo
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+Após iniciar o projeto, você pode executá-lo em:
 
-## Join the community
+- **📱 Expo Go**: Escaneie o QR code com o app Expo Go
+- **🤖 Android**: Pressione `a` no terminal para abrir no emulador Android
+- **🍎 iOS**: Pressione `i` no terminal para abrir no simulador iOS (apenas macOS)
+- **🌐 Web**: Pressione `w` no terminal para abrir no navegador
 
-Join our community of developers creating universal apps.
+## 🧪 Executar testes
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+### Executar todos os testes:
+```bash
+npm test
+```
+
+### Executar testes em modo watch:
+```bash
+npm run test:watch
+```
+
+### Executar testes com relatório de cobertura:
+```bash
+npm run test:coverage
+```
+
+### Executar testes específicos:
+```bash
+# Teste do cadastro de produtos
+npm test cadastrarProduto.test.tsx
+
+# Teste da listagem de produtos
+npm test listProdutos.test.tsx
+
+# Teste da simulação de empréstimos
+npm test loanSimulation.test.tsx
+```
+
+## 🔧 Comandos úteis
+
+```bash
+# Limpar cache do Expo
+npx expo start --clear
+
+# Executar no Android
+npm run android
+
+# Executar no iOS
+npm run ios
+
+# Executar na web
+npm run web
+```
+
+## 📋 Pré-requisitos
+
+- [Node.js](https://nodejs.org/) (versão 18 ou superior)
+- [npm](https://www.npmjs.com/) ou [yarn](https://yarnpkg.com/)
+- [Expo CLI](https://docs.expo.dev/get-started/installation/)
+- Para Android: [Android Studio](https://developer.android.com/studio)
+- Para iOS: [Xcode](https://developer.apple.com/xcode/) (apenas macOS)
